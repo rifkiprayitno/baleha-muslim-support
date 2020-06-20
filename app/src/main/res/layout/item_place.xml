@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/iv_icon_place"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_place_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Address"
+                android:textColor="#444"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_place_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flat No 404, Skyline Apartments, Vizag - 500576"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/Divider"
+        android:visibility="visible"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_mosque"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_mosque" />
+
+    <item
+        android:id="@+id/navigation_dua"
+        android:icon="@drawable/ic_nav_bottom_releases_24"
+        android:title="@string/title_dua" />
+
+    <item
+        android:id="@+id/navigation_salat"
+        android:icon="@drawable/ic_nav_bottom_alarm_24"
+        android:title="@string/title_salat" />
+
+    <item
+        android:id="@+id/navigation_asma"
+        android:icon="@drawable/ic_nav__bottom_contacts_24"
+        android:title="@string/title_asma" />
+
+    <item
+        android:id="@+id/navigation_others"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_others" />
+
+</menu>

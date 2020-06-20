@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ProMuslim</string>
+    <string name="app_google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBaRqWC6lbCYn8QMY7Tn2I6kSWyNgawWdo</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_mosque">Masjid</string>
+    <string name="title_salat">Jadwal Shalat</string>
+    <string name="title_asma">Asma</string>
+    <string name="title_asma_long">Asmaul Husna</string>
+    <string name="title_dua">Doa</string>
+    <string name="title_dua_long">Doa-doa</string>
+    <string name="title_others">Lainnya</string>
+
+    <string-array name="other_item_title">
+        <item>Compass</item>
+        <item>Pesantren</item>
+        <item>Tasbih</item>
+        <item>Halla</item>
+    </string-array>
+
+    <string name="other_title_item_compass">Compass</string>
+    <string name="other_title_item_pesantren">Pesantren</string>
+    <string name="other_title_item_tasbih">Tasbih</string>
+    <string name="other_title_item_hallal">Hallal</string>
+    <string name="title_activity_sample_maps">Map</string>
+
+    <string name="txt_no_results">Hasil tidak ditemukan untuk \'%1$s\'</string>
+
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+</resources>

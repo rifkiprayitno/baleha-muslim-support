@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_mosque">
+
+    <fragment
+        android:id="@+id/navigation_mosque"
+        android:name="id.baleha.promuslim.view.main.fragments.mosque.MosqueFragment"
+        android:label="@string/title_mosque"
+        tools:layout="@layout/fragment_mosque" />
+
+    <fragment
+        android:id="@+id/navigation_salat"
+        android:name="id.baleha.promuslim.view.main.fragments.salat.SalatFragment"
+        android:label="@string/title_salat"
+        tools:layout="@layout/fragment_salat" />
+
+    <fragment
+        android:id="@+id/navigation_asma"
+        android:name="id.baleha.promuslim.view.main.fragments.asma.AsmaFragment"
+        android:label="@string/title_asma_long"
+        tools:layout="@layout/fragment_asma" />
+
+    <fragment
+        android:id="@+id/navigation_dua"
+        android:name="id.baleha.promuslim.view.main.fragments.dua.DuaFragment"
+        android:label="@string/title_dua_long"
+        tools:layout="@layout/fragment_asma" />
+
+    <fragment
+        android:id="@+id/navigation_others"
+        android:name="id.baleha.promuslim.view.main.fragments.others.OthersFragment"
+        android:label="@string/title_others"
+        tools:layout="@layout/fragment_asma" />
+</navigation>
