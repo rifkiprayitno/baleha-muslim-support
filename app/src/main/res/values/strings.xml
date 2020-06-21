@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ProMuslim</string>
     <string name="app_google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBaRqWC6lbCYn8QMY7Tn2I6kSWyNgawWdo</string>
+    <string name="BASEURL_PRAYTIME">http://api.aladhan.com/</string>
 
     <string name="title_activity_main">MainActivity</string>
     <string name="title_mosque">Masjid</string>
