@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".view.main.fragments.salat.SalatFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/content_layout">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/text_salat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Senin, 20 juni" />
+
+                    <TextView
+                        android:id="@+id/tv_date_hijr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="30 Shawwal 1441" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_praytime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_praytime_imsak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_praytime_name_imsak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:padding="8dp"
+                            android:text="Imsak" />
+
+                        <TextView
+                            android:id="@+id/tv_praytime_time_imsak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toLeftOf="@+id/iv_praytime_notif_imsak"
+                            android:padding="8dp"
+                            android:text="00:00" />
+
+                        <ImageView
+                            android:id="@+id/iv_praytime_notif_imsak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_nav_bottom_alarm_24"
+                            android:visibility="invisible" />
+
+                        <View
+                            style="@style/Divider"
+                            android:layout_below="@+id/iv_praytime_notif_imsak"
+                            android:layout_marginTop="8dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_praytime_fajr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_praytime_name_fajr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:padding="8dp"
+                            android:text="Subuh" />
+
+                        <TextView
+                            android:id="@+id/tv_praytime_time_fajr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toLeftOf="@+id/iv_praytime_notif_fajr"
+                            android:padding="8dp"
+                            android:text="00:00" />
+
+                        <ImageView
+                            android:id="@+id/iv_praytime_notif_fajr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_nav_bottom_alarm_24"
+                            android:visibility="invisible" />
+
+                        <View
+                            style="@style/Divider"
+                            android:layout_below="@+id/iv_praytime_notif_fajr"
+                            android:layout_marginTop="8dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_praytime_dhuhr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_praytime_name_dhuhr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:padding="8dp"
+                            android:text="Dzuhur" />
+
+                        <TextView
+                            android:id="@+id/tv_praytime_time_dhuhr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toLeftOf="@+id/iv_praytime_notif_dhuhr"
+                            android:padding="8dp"
+                            android:text="00:00" />
+
+                        <ImageView
+                            android:id="@+id/iv_praytime_notif_dhuhr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_nav_bottom_alarm_24"
+                            android:visibility="invisible" />
+
+                        <View
+                            style="@style/Divider"
+                            android:layout_below="@+id/iv_praytime_notif_dhuhr"
+                            android:layout_marginTop="8dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_praytime_ashr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_praytime_name_ashr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:padding="8dp"
+                            android:text="Ashar" />
+
+                        <TextView
+                            android:id="@+id/tv_praytime_time_ashr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toLeftOf="@+id/iv_praytime_notif_ashr"
+                            android:padding="8dp"
+                            android:text="00:00" />
+
+                        <ImageView
+                            android:id="@+id/iv_praytime_notif_ashr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_nav_bottom_alarm_24"
+                            android:visibility="invisible" />
+
+                        <View
+                            style="@style/Divider"
+                            android:layout_below="@+id/iv_praytime_notif_ashr"
+                            android:layout_marginTop="8dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_praytime_maghrib"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_praytime_name_maghrib"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:padding="8dp"
+                            android:text="Maghrib" />
+
+                        <TextView
+                            android:id="@+id/tv_praytime_time_maghrib"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toLeftOf="@+id/iv_praytime_notif_maghrib"
+                            android:padding="8dp"
+                            android:text="00:00" />
+
+                        <ImageView
+                            android:id="@+id/iv_praytime_notif_maghrib"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_nav_bottom_alarm_24"
+                            android:visibility="invisible" />
+
+                        <View
+                            style="@style/Divider"
+                            android:layout_below="@+id/iv_praytime_notif_maghrib"
+                            android:layout_marginTop="8dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_praytime_isha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_praytime_name_isha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:padding="8dp"
+                            android:text="Isha" />
+
+                        <TextView
+                            android:id="@+id/tv_praytime_time_isha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toLeftOf="@+id/iv_praytime_notif_isha"
+                            android:padding="8dp"
+                            android:text="00:00" />
+
+                        <ImageView
+                            android:id="@+id/iv_praytime_notif_isha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_nav_bottom_alarm_24"
+                            android:visibility="invisible" />
+
+                        <View
+                            style="@style/Divider"
+                            android:layout_below="@+id/iv_praytime_notif_isha"
+                            android:layout_marginTop="8dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
