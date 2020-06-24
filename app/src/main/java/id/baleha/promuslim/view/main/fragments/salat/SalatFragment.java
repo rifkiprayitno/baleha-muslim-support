@@ -114,7 +114,7 @@ public class SalatFragment extends MvpFragment<SalatPresenter> implements SalatV
     }
 
     @Override
-    public void getDatFail(String message) {
+    public void getDataFail(String message) {
         Toast.makeText(getActivity(), "Please load again: "+message,Toast.LENGTH_SHORT).show();
     }
 

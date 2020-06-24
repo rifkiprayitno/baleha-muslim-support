@@ -31,7 +31,7 @@ public class BasePresenter<V> {
     public void onUnsubscribe() {
         if (compositeSubscription != null && compositeSubscription.hasSubscriptions()) {
             compositeSubscription.unsubscribe();
-            Log.e("RLOG", "onUnsubsribe");
+            Log.w("RLOG", "onUnsubsribe");
         }
     }
 

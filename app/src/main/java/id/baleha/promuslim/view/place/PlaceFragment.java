@@ -179,13 +179,13 @@ public class PlaceFragment extends Fragment implements OnMapReadyCallback {
          * device. The result of the permission request is handled by a callback,
          * onRequestPermissionsResult.
          */
-        Log.e("RLOG", "invoke getLocationPermission.");
-        Log.e("RLOG", "ktegori: "+category);
+        Log.i("RLOG", "invoke getLocationPermission.");
+        Log.i("RLOG", "kategori: "+category);
         mLocationPermissionGranted = false;
         if (ContextCompat.checkSelfPermission(this.getActivity(),
                 android.Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
-            Log.e("RLOG", "permission granted.");
+            Log.d("RLOG", "permission granted.");
             mLocationPermissionGranted = true;
         } else {
             Log.e("RLOG", "permission cant showup/denied.");
@@ -216,7 +216,7 @@ public class PlaceFragment extends Fragment implements OnMapReadyCallback {
 
 
     private void pickCurrentPlace() {
-        Log.e("RLOG", "invoke pickCurrentPlace");
+        Log.i("RLOG", "invoke pickCurrentPlace");
         if (mMap == null) {
             Log.e("RLOG", "cannot find mMap!!");
             return;
@@ -274,7 +274,7 @@ public class PlaceFragment extends Fragment implements OnMapReadyCallback {
                             }
                             else {
                                 // do your stuff
-                                Log.i("RLOG", "cannot get current city: ");
+                                Log.e("RLOG", "cannot get current city: ");
                             }
 
                         } else {
@@ -348,7 +348,7 @@ public class PlaceFragment extends Fragment implements OnMapReadyCallback {
                                 placesList.add(placeLikelihood.getPlace());
                             }
 
-                            Log.e("RLOG", "jumlah list: " + placesList.size());
+                            Log.d("RLOG", "jumlah list: " + placesList.size());
 
                             // COMMENTED OUT UNTIL WE DEFINE THE METHOD
                             // Populate the ListView

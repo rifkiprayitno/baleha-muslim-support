@@ -2,7 +2,6 @@ package id.baleha.promuslim.view.main.fragments.salat;
 
 import id.baleha.promuslim.base.BasePresenter;
 import id.baleha.promuslim.model.praytime.PrayTimeResponse;
-import id.baleha.promuslim.model.praytime.Timings;
 import id.baleha.promuslim.service.NetworkCallback;
 
 public class SalatPresenter extends BasePresenter<SalatView> {
@@ -21,7 +20,7 @@ public class SalatPresenter extends BasePresenter<SalatView> {
 
             @Override
             public void onFailure(String Message) {
-                mvpView.getDatFail(Message);
+                mvpView.getDataFail(Message);
             }
 
             @Override

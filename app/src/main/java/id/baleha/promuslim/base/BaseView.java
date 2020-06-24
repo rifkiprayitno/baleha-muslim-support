@@ -8,7 +8,7 @@ public interface BaseView {
 
     void getDataSuccess(Object model);
 
-    void getDatFail(String message);
+    void getDataFail(String message);
 
     void refreshdata();
 }
