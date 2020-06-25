@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_reset_counter"
+        android:title="Ulangi"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_360_24"/>
+    <item
+        android:id="@+id/action_switch_sound"
+        android:title="Item"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_volume_off_24"/>
+    <item
+        android:id="@+id/action_switch_counter_target"
+        android:title="99"
+        app:actionLayout="@layout/switch_item"
+        app:showAsAction="always"/>
+</menu>

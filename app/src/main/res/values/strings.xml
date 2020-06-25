@@ -29,4 +29,7 @@
 
     <string name="default_info_title">Default Location</string>
     <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="txt_counter">0</string>
+    <string name="txt_counter_target">/%d</string>
+    <string name="txt_counter_total">Total:  %d</string>
 </resources>

@@ -22,11 +22,11 @@ android {
     buildTypes {
         buildTypes {
             debug {
-                buildConfigField "String", "BASEURL_PRAYTIME", "\"http://api.aladhan.com\""
+                buildConfigField "String", "BASEURL_PRAYTIME", "\"https://api.aladhan.com\""
             }
         }
         release {
-            buildConfigField "String", "BASEURL_PRAYTIME", "\"http://api.aladhan.com\""
+            buildConfigField "String", "BASEURL_PRAYTIME", "\"https://api.aladhan.com\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
